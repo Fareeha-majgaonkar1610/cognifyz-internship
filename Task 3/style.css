@@ -1,4 +1,4 @@
-
+/* Base Styles also used as Inline styling in Task 1-2 */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,11 +17,14 @@ p {
     font-size: larger;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.logo-img {
+    max-height: 50px; 
+    width: auto;
+    margin-right: auto;
 }
 
+
+/* Task 3 */
 /* Medium screens (tablets) */
 @media (max-width: 768px) {
     h1 {
@@ -40,4 +43,60 @@ img {
     p {
         font-size: small;
     }
+}
+
+
+/* Task 6 */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+ /* Navbar */
+.custom-link {
+    color: white;
+    text-decoration: none; 
+    margin-left: 15px; 
+}
+
+.custom-link:hover {
+    text-decoration: underline;
+    color: yellow; 
+    cursor: pointer;
 }

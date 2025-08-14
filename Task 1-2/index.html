@@ -1,13 +1,46 @@
 <html>
     <head>
         <title> Basic HTML page </title>
-        <link rel="stylesheet" href="../Task 3/styles.css">
+        <link rel="stylesheet" href="../Task 3/style.css">
 
     </head>
 <body>
-    <h1 style="font-size: 30px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: crimson; background-color: bisque;text-align: center;border-color: black;border-style: dashed;"> TASK 1 & 2</h1>
-    <p style="text-align: center; font-size: larger;"> Created a basic HTML webpage with HTML tags </p>
-    <img src="logos/company_logo.jpg" alt="Company logo" style="height: 300px;">
 
+    
+
+    <h1 style="font-size: 30px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: crimson;
+     background-color: bisque;text-align: center;border-color: black;border-style: dashed;"> TASKS</h1>
+
+    <p style="text-align: center; font-size: larger;"> Created a basic HTML webpage with HTML tags </p>
+
+    <img src="../Task 1-2/logos/company_logo.jpg" alt="Company logo" style="height: 300px;">
+
+    <button onclick="changeColor()">Change Background Color</button>
+    <button onclick="loadPosts()">Load API Data</button>
+
+    <div id="getApidata" style="margin-top: 20px; font-size: 18px;"></div>
+
+
+<!-- Task 6 -->
+<h2> Form </h2>
+<form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <small class="error" id="nameError"></small>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <small class="error" id="emailError"></small>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Type your message" required></textarea>
+    <small class="error" id="messageError"></small>
+
+    <button type="submit">Submit</button>
+</form>
+
+
+
+<script src="../Task 4-5/script.js"></script>
 </body>
 </html>

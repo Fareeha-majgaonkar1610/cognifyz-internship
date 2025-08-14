@@ -1,0 +1,108 @@
+// Variables
+$font-family-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$primary-color: crimson;
+$background-highlight: bisque;
+$button-bg: #007BFF;
+$button-hover: #0056b3;
+$error-color: red;
+$link-hover-color: yellow;
+
+// Base Styles
+body {
+  margin: 0;
+  font-family: $font-family-main;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  color: $primary-color;
+  background-color: $background-highlight;
+  border: 2px dashed black;
+  padding: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
+}
+
+p {
+  font-size: larger;
+
+  @media (max-width: 768px) {
+    font-size: medium;
+  }
+
+  @media (max-width: 480px) {
+    font-size: small;
+  }
+}
+
+// Logo
+.logo-img {
+  max-height: 50px;
+  width: auto;
+  margin-right: auto;
+}
+
+// Task 6 Form Styling
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #f4f4f4;
+  border-radius: 8px;
+
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 10px;
+    background: $button-bg;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background: $button-hover;
+    }
+  }
+
+  .error {
+    color: $error-color;
+    font-size: 0.9em;
+  }
+}
+
+// Navbar
+.navbar {
+  .custom-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+
+    &:hover {
+      text-decoration: underline;
+      color: $link-hover-color;
+      cursor: pointer;
+    }
+  }
+}

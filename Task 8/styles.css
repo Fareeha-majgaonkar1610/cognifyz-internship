@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  color: crimson;
+  background-color: bisque;
+  border: 2px dashed black;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+p {
+  font-size: larger;
+}
+@media (max-width: 768px) {
+  p {
+    font-size: medium;
+  }
+}
+@media (max-width: 480px) {
+  p {
+    font-size: small;
+  }
+}
+
+.logo-img {
+  max-height: 50px;
+  width: auto;
+  margin-right: auto;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #f4f4f4;
+  border-radius: 8px;
+}
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background: #0056b3;
+}
+form .error {
+  color: red;
+  font-size: 0.9em;
+}
+
+.navbar .custom-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.navbar .custom-link:hover {
+  text-decoration: underline;
+  color: yellow;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */
